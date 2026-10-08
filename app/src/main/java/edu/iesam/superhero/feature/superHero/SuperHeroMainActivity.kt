@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import edu.iesam.superhero.feature.users.UsersMainActivity
 import edu.iesam.superhero.R
 import edu.iesam.superhero.feature.superHero.data.SuperHeroDataRepository
@@ -30,7 +31,7 @@ class SuperHeroMainActivity : AppCompatActivity() {
 
             val superHeroes = superHeroViewPresentation. getSuperHero()
 
-            findViewById<TextView>(R.id.super1)
+            findViewById<ConstraintLayout>(R.id.super1)
                 .findViewById<TextView>(R. id.input_name).text = superHeroes[0].name
 
 //            findViewById<TextView>(R.id.super1 1)
@@ -42,4 +43,4 @@ class SuperHeroMainActivity : AppCompatActivity() {
             val TAG = UsersMainActivity::class.java.simpleName
 
         }
-}S
+}
