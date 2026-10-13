@@ -32,10 +32,10 @@ class SuperHeroMainActivity : AppCompatActivity() {
             val superHeroes = superHeroViewPresentation. getSuperHero()
 
             findViewById<ConstraintLayout>(R.id.super1)
-                .findViewById<TextView>(R. id.input_name).text = superHeroes[0].name
+                .findViewById<TextView>(R. id.label_name).text = superHeroes[0].name
 
-//            findViewById<TextView>(R.id.super1 1)
-//                .findViewById<TextView>(R.id.i).text = superHeroes[0].slug
+            findViewById<TextView>(R.id.super1)
+                .findViewById<TextView>(R.id.input_name).text = superHeroes[0].slug
         }
 
         companion object {
